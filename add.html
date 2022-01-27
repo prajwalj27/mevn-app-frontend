@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Hotel - 13</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+	</head>
+	<body class="d-flex flex-column h-100 container">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <div class="container-fluid">
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-link" href="index.html">Reservations</a>
+					<a class="nav-link active" aria-current="page" href="add.html">Add Guest</a>
+				  </div>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		
+		<h3>Add New Guest</h3>
+		
+		<form onsubmit="return false;">
+		  <div class="mb-3">
+			<label for="roomNo" class="form-label">Room No.</label>
+			<input type="text" class="form-control" id="roomNo" autofocus>
+		  </div>
+		  <div class="mb-3">
+			<label for="name" class="form-label">Name</label>
+			<input type="text" class="form-control" id="name">
+		  </div>
+		  <div class="mb-3">
+			<label for="phoneNo" class="form-label">Phone No.</label>
+			<input type="text" class="form-control" id="phoneNo">
+		  </div>
+		  <div class="mb-3">
+			<label for="type" class="form-label">Room Type</label>
+			<input type="text" class="form-control" id="type" autofocus>
+		  </div>
+		  <div class="mb-3">
+			<label for="adults" class="form-label">Adults</label>
+			<input type="text" class="form-control" id="adults">
+		  </div>
+		  <div class="mb-3">
+			<label for="children" class="form-label">Children</label>
+			<input type="text" class="form-control" id="children">
+		  </div><div class="mb-3">
+			<label for="from" class="form-label">From</label>
+			<input type="text" class="form-control" id="from" autofocus>
+		  </div>
+		  <div class="mb-3">
+			<label for="to" class="form-label">To</label>
+			<input type="text" class="form-control" id="to">
+		  </div>
+		  <button class="btn btn-primary" onclick="return postData()">Submit</button>
+		  <a href="index.html" class="btn btn-primary">Cancel</a>
+		</form>
+		
+		<footer class="footer mt-auto py-3 bg-light">
+		  <div class="container text-center">
+			<span class="text-muted">ESD - Group 13 &copy; 2021</span>
+		  </div>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+	<script>
+	</script>
+</html>
